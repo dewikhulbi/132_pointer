@@ -8,8 +8,8 @@ class orang {
 private:
 	string nama;
 public:
-	void setnama(string pNama);
-	friend clss siswa;
+	void setNama(string pNama);
+	friend class siswa;
 };
 class siswa {
 private:
@@ -20,10 +20,13 @@ public:
 };
 
 void siswa::displayAll(orang& a) {
-	cout << id < , endl << a.nama;
+	cout << id << endl << a.nama;
 }
 
-void orang::setnama(string pNama) {
+void orang::setNama(string pNama) {
 	nama = pNama;
 }
 
+void siswa::setId(int pId) {
+	id = pId;
+}
